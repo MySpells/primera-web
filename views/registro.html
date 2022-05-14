@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--METAETIQUETAS-->
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Página hecha por Rafael Manuel Sánchez Villanueva"/>
+<meta name="robots" content="NOFOLLOW"/>
+<meta name="Author" content="Rafael Manuel Sánchez Villanueva"/>
+<meta name="keywords" content="MásterD, Práctica4, Curso Programación, HTML, CSS"/>
+<meta name="lang" content="es"/>
+<meta name="revisit-after" content="5 days"/>
+<meta name="category" content="Prácticas"/>
+<!--FAVICON-->
+<link rel="icon" href="../favicon.png" type="image/png">
+<!--CSS-->
+<link rel="stylesheet" href="../css/estilos.css" type="text/css">
+<title>Práctica 4 - Curso Programación MD</title>
+</head>
+<body onload="registrate()">
+    <div class="todoContainer">
+    <div class="portada">
+        <h1 class="titulo">Programatips</h1>
+    </div>
+    <header class="header">
+        <nav>
+            <ul id="barraNavegacion">
+                <li><a href="../index.html">Índice</a></li>
+                <li><a href="./enlaces.html">Enlaces</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h2 class="lenguajesProgramacion">Regístrese con nosotros</h2>
+    <div class="formContainer">
+        <h3 class="tituloForm">Rellene los siguientes campos:</h3>
+        <form action="../views/registro.html" method="get" target="_blank" class="formulario">
+            <div class="containerCampos">
+                <label for="name"  class="labels">Nombre: </label>
+                <input type="text" placeholder="Nombre y apellidos" name="name" id="name" title="Escriba sólo letras" required class="inputs">
+            </div> 
+            <div class="containerCampos">   
+                <label for="address" class="labels">Dirección: </label>
+                <input type="text" placeholder="Domicilio actual" name="address" id="address" required class="inputs">
+            </div>   
+            <div class="containerCampos">
+                <label for="phone" class="labels">Teléfono de contacto: </label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{9,9}" title="Escribe sólo números" required class="inputs">
+            </div> 
+            <div class="containerCampos" >   
+                <label for="age" class="labels">Edad: </label>
+                <input type="number" id="age" name="age" min="18" max="99" required class="inputs">
+            </div> 
+            <div class="containerCampos" >
+                <label for="email" class="labels">E-mail: </label>
+                <input type="email" id="email" name="email" required class="inputs" placeholder="ejemplo@gmail.com">
+            </div>
+            <div class="containerBotom">
+                <input type="submit" value="Enviar datos" id="boton" class="botom" onclick="gracias()">
+                <input type="reset" title="Pulsa para escribir de nuevo" class="botom">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <p>Web realizada por &copy;Programatips</p>
+            <a href="https://www.instagram.com/"><img class="redes" src="../assets/img/580b57fcd9996e24bc43c521.png" alt="Instagram icon" width="1000" height="1000"></a>
+            <a href=""><img src="../assets/img/facebook-2429746_640.png" alt="" class="redes"></a>
+            <a href=""><img src="../assets/img/linked-in-2668700_640.png" alt="" class="redes"></a>
+        </div>
+    </footer>
+</div>
+<!--JAVASCRIPT-->
+<script src="../javascript/javascript.js"></script>    
+</body>
+</html>
